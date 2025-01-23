@@ -1,0 +1,14 @@
+a=[4,2,4,5,6,1,2]
+n=len(a)
+d=3
+d=d%n
+temp=a[:d]  
+print(temp) 
+for i in range(d,len(a)):
+    a[i-d]=a[i]
+for i in range(n-d,len(a)):
+    a[i]=temp[i-(n-d)]
+print(a)
+
+
+
