@@ -1,0 +1,17 @@
+a=[1,2,4,5]
+ac=sum(a)
+n=len(a)+1
+ec=n*(n+1)/2
+print(int(ec-ac))
+
+#using XOR
+
+a=[1,2,4,5]
+xor1=0
+for num in a:
+    xor1^=num
+xor2=0
+for i in range(1,len(a)+2):
+    xor2^=i
+print(xor1^xor2)
+
