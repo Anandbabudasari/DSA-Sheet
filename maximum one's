@@ -1,0 +1,11 @@
+a=[1,1,1,1,1,1,1,0,0,1,0,1,1,1,1]
+max_1=0
+c=0
+for num in a:
+    if num==1:
+        c+=1
+        if c>max_1:
+            max_1=c
+    else:
+        c=0
+print(max_1)
