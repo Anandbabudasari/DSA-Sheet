@@ -1,0 +1,6 @@
+a=[1,1,2,3,3]
+xor=0
+for num in a:
+    xor^=num
+print(xor)
+
