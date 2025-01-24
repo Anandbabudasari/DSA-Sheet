@@ -1,0 +1,31 @@
+a=[2,6,5,8,11]
+target=14
+n=len(a)
+left=0
+right=n-1
+a.sort()
+while left<right:
+    s=a[left]+a[right]
+    if s==target:
+        print(a[left],a[right])
+        break
+    elif s<target:
+        left+=1
+    else:	
+        right-=1
+else:
+    print('no pair found')
+    
+a=[2,6,5,8,11]
+target=14
+n=len(a)
+dic={}
+for i,num in a:
+    complement=target-num
+    if complement in dic:
+        print(complement,num)
+        break
+    dic[num]=True
+else:
+    print("no")
+    
