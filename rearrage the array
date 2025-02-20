@@ -1,0 +1,12 @@
+a=[-2,1,1,2,-3,-2]
+ans=[0]*len(a)
+posind,negind=0,1
+
+for i in range(len(a)):
+    if a[i]>0:
+        ans[posind]=a[i]
+        posind+=2
+    else:
+        ans[negind]=a[i]
+        negind+=2
+print(ans) 
