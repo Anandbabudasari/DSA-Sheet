@@ -1,0 +1,15 @@
+a=[2,6,5,8,11]
+tar=15
+d={}
+found=False
+for i in range(len(a)):
+    req=tar-a[i]
+    if req in d:
+        print(True)
+        print(i,d[req])
+        print(a[i],req)
+        found=True
+    else:
+        d[a[i]]=i
+if not found:
+    print(False)
