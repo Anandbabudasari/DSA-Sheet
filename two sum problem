@@ -13,3 +13,15 @@ for i in range(len(a)):
         d[a[i]]=i
 if not found:
     print(False)
+
+a=[2,6,5,8,11]
+d={}
+tar=11
+for i in range(len(a)):
+    req=tar-a[i]
+    if req in d:
+        print('Index are:',i,d[req])
+        print('Numbers are:',a[i],req)
+    else:
+        d[a[i]]=i
+
